@@ -29,10 +29,10 @@ def ask_gpt3(question):
 
 st.title('Talk to Yourself')
 
-if st.button('Upload System Prompt'):
-    question = st.text_input("Please enter your question:")
-    if st.button('Ask'):
-        st.write("Thinking...")
-        response = ask_gpt3(question)
-        st.write(response)
+question = st.text_input("Please enter your question:")
+if st.button('Ask'):
+    st.write("Thinking...")
+    response = ask_gpt3(question)
+    st.write(response)
+
 
