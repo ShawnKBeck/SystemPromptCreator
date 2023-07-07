@@ -21,7 +21,7 @@ def ask_gpt3(question):
     user_message = {"role": "user", "content": question}
     
     response = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo-16k",  
+        model="gpt-4-0613",  
         messages=[system_message, user_message]
     )
     
